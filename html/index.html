@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Directivas</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <section id="seccion">
+        <h2>Clases</h2>
+        <h2>Arreglos</h2>
+
+        <p class="parrafo" v-bind:class="['margen', 'texto', colorFondo]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quod vitae architecto ab culpa reiciendis labore soluta? Rerum laborum suscipit, molestias quibusdam adipisci corrupti libero aperiam necessitatibus illum? Enim, est.</p>
+        <select v-model="colorFondo" name="" id="">
+            <option value="fondo1">Fondo 1</option>
+            <option value="fondo2">Fondo 2</option>
+            <option value="fondo3">Fondo 3</option>
+        </select>
+    </section>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

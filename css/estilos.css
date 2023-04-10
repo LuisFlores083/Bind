@@ -1,0 +1,59 @@
+h1{
+    color: lightpink;
+    background-color: lightslategrey;
+    text-align: center;
+}
+section {
+    background-color: lightslategrey;
+}
+
+label input[type="text"]{
+    height:28px;
+    width:120px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:lightpink;
+    border-radius:10px;
+    display:block;
+}
+
+li input[type="text"]{
+    height:28px;
+    width:40px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:lightpink;
+    border-radius:10px;
+}
+
+.columna{
+    background-color: lightslategrey;
+    width:100px;
+    margin:0;
+}
+
+.parrafo{
+    width: 480px;
+    border: 1px lightblue solid;
+}
+
+.margen{
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.text{
+    color: lightblue;
+    font-size: 20px;
+}
+
+.fondo1{
+    background-color: lightcoral;
+}
+.fondo2{
+    background-color: lightgoldenrodyellow;
+}
+.fondo3{
+    background-color: lightskyblue;
+}
