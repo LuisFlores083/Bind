@@ -21,7 +21,27 @@
             <option value="fondo2">Fondo 2</option>
             <option value="fondo3">Fondo 3</option>
         </select>
+
+        
+        <article>
+            <!--Validar Elementos con CSS-->
+            <h4>********************Objetos**********************</h4>
+        
+            <input type="text" v-model="nombre" @keyup="validar()">
+            <label :class="{negro:clase==0,
+                verde:clase==1,
+                rojo:clase==2
+            }">{{validacion}}</label>
+        </article>
+
+        <article>
+            <h4>********************Objetos**********************</h4>
+        
+            <input type="text" v-model="tamanio">
+            <label :style="{ fontSize: tamanio + 'px' }">Texto a cambiar</label>
+        </article>
     </section>
+
 
     <script src="../js/vue.js"></script>
     <script src="../js/script.js"></script>

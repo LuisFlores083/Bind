@@ -57,3 +57,16 @@ li input[type="text"]{
 .fondo3{
     background-color: lightskyblue;
 }
+
+.negro{
+    background-color:white;
+  }
+
+  .verde{
+    background-color: lightgreen;
+  }
+
+  .rojo{
+    background-color: lightcoral;
+
+  }
