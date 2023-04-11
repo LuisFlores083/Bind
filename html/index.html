@@ -40,6 +40,34 @@
             <input type="text" v-model="tamanio">
             <label :style="{ fontSize: tamanio + 'px' }">Texto a cambiar</label>
         </article>
+        
+        <article>
+            <h2>Otros Atributos</h2>
+            <p>Agregar a carrito: {{cantidad}}</p>
+
+            <button class="btn" @click="cantidad++" :disabled="cantidad == 50">+</button>
+            <button class="btn" @click="cantidad--" :disabled="cantidad == 0">-</button>
+
+        </article>
+
+        <article>
+            <h2>Propiedades Computadas</h2>
+            <form @submit.prevent="sumarNumeros">
+                <input type="number" v-model.number="num1">
+                <input type="number" v-model.number="num2" @keyup="sumarNumeros()">
+                <input type="submit" value="Calcular">
+
+                <p>{{resultado}}</p>    
+                <p>Suma: {{resultadoSuma}}</p>
+                <p>Resta: {{resultadoResta}}</p>
+                <p>Multiplicación: {{resultadoMulti}}</p>
+                <p>División: {{resultadoDivi}}</p>
+                <p>Modulo: {{resultadoModul}}</p>
+
+
+            </form>
+        </article>
+        
     </section>
 
 
